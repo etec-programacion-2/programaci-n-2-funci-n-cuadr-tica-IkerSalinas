@@ -3,8 +3,8 @@ package org.example
 fun main() {
     // Coeficientes
     val a = 1
-    val b = -3
-    val c = 2
+    val b = 1
+    val c = 1
 
     // Validación de 'a'
     if (a == 0) {
@@ -52,9 +52,7 @@ fun calcularRaices(a: Int, b: Int, c: Int): String {
             "Raíz real doble: x = %.2f".format(raiz)
         }
         else -> { // Raíces complejas
-            val parteReal = -b / denominador
-            val parteImaginaria = Math.abs(discriminante) / denominador // Usamos el valor absoluto de la parte negativa
-            "Raíces complejas: x1 = %.2f + %.2fi, x2 = %.2f - %.2fi".format(parteReal, parteImaginaria, parteReal, parteImaginaria)
+            "Son raices complejas"
         }
     }
 }
